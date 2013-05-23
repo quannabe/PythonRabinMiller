@@ -44,7 +44,7 @@ Output:
 
 `reject, witness:  72180`
 
-Here, I was able to find a winess in a single iteration (your witness may vary)
+Here, I was able to find a winess in a single iteration Your witness may vary, and it may take more than 1 iteration to find a witness.
 
 This method seems to be quite efficient. For example, when running the Rabin-Miller method 1,000,000 times on the above Carmichael Number, using a random ‘a’ value (from 0 to n-2) I found that ‘Composite’ was returned 0.9257% of the time-- quite better than the worst case of 0.75!
 
