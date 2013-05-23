@@ -30,7 +30,7 @@ First, let us check a very large prime: **35742549198872617291353508656626642567
 
 `print rabMill(a,  n-1, n)`
 
-At each iteration, the method will return 1
+At each iteration, the method will return `1`
 
 Now, let us try a composite number-- which happens to be a **Carmichael Number**: **294409**
 
