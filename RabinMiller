@@ -1,0 +1,38 @@
+## Find witness using Rabin-Miller method
+
+from random import randint
+
+def rabMill(a, m, n):
+    
+    if m == 0:
+        #return prime
+        return 1
+    
+    # First test
+    x = rabMill(a, m / 2, n)
+    
+    if x == 0:
+        print "reject, witness: ", a
+        return 0
+    
+    # mod * mod % n to get next value 
+    y = (x*x) % n
+    
+    # check cases:
+    if ( (x != 1) and (y == 1) and (x != (n-1)) ):
+        
+        # return composite
+        print "reject, witness: ", a
+        return 0
+        
+     
+    if (m % 2) != 0:
+        y = (a * y) % n
+    return y
+
+
+# harness test
+n = 294409
+a = randint(0,n-2)
+print rabMill(a,  n-1, n)
+
