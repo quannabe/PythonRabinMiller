@@ -10,7 +10,7 @@ If a number is composite, Rabin-Miller has been shown to return composite 3/4 of
 
 This method may give **False Negatives** returning prime when the number is composite-- but will not return **False Positives** returning composite when the number is prime.
 
-Running this method for many iterations will greatly improve the accuracy. So, if we run the test for m iterations, we see that our probability of being incorrect is: **(3/4)^m**
+Running this method for many iterations will greatly improve the probability of getting a correct result. So, if we run the test for m iterations, we see that our probability of being incorrect is: **(3/4)^m**
 
 **Keep in mind**-- we only need a single witness to be found in order for us to be able to classify the number as composite-- as soon as we find this witness, we can stop looking.
 
